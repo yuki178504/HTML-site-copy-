@@ -152,6 +152,15 @@
   }
 }
 
+.main {
+  display:block;
+}
+
+@media screen and (max-width: 767px) {
+  .main {
+    padding-top: 52px
+  }
+}
 
 .firstView {
   background-image: url(//camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg);
@@ -164,7 +173,7 @@
 @media screen and (max-width: 767px) {
 .firstView  {
     background-image: none;
-    padding-top: 0;
+    padding-top:50px;
     padding-bottom: 35px;
 }
 }
@@ -190,10 +199,6 @@
  }
 }
 
-img {
-  vertical-align: middle;
-}
-
 .firstView-container {
   max-width: 1140px;
   margin-left:auto;
@@ -207,6 +212,8 @@ img {
 .firstView-container {
     padding-left: 20px;
     padding-right: 20px;
+    max-width: none;
+    margin-top: -45vw;
 }
 }
 
@@ -226,20 +233,21 @@ img {
   font-size: 25px;
   line-height: 35px;
   text-align: center;
+  margin-bottom: 15px;
 }
 
 .firstView-content-img {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   vertical-align: middle;
-  box-sizing: border-box;
 }
 
 @media screen and (max-width: 767px) {
   .firstView-content-img {
     display: flex;
+    justify-content: space-between;
     margin-bottom: 30px;
     width: 100%;
-    box-sizing: border-box;
+    box-sizing: content-box;
   }
 }
 
@@ -248,6 +256,7 @@ img {
 }
 
 .firstView-content-img2 {
+  width: 40%;
   margin-right: 10px;
 }
 
@@ -264,7 +273,7 @@ img {
 @media screen and (max-width: 767px) {
   .firstView-content-img3 {
     width: 27.5%;
-    margin-right: auto;
+  
   }
 }
 
@@ -391,11 +400,15 @@ img {
   line-height: 54px;
   width: 100%;
   letter-spacing: 0.1em;
-  
-  
 }
 
-.About-title p {
+@media screen and (max-width: 767px) {
+  .About-title h2 {
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+}
+  .About-title p {
   font-size: 16px;
   font-weight: 100;
   line-height: 26px;
@@ -423,13 +436,4 @@ img {
 body, div, p, ul, ol, li, dl, dt, dd, table, th, td, img, figure, h1, h2, h3, h4, h5, h6, form, select {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
-}
-
-@media screen and (max-width: 767px) {
-body, div, p, ul, ol, li, dl, dt, dd, table, th, td, img, figure, h1, h2, h3, h4, h5, h6, form, select {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
 }
